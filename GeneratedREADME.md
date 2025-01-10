@@ -1,7 +1,8 @@
 
-# ReadMe Generator
+# Insert Your Title Here
 
 ## Table of Contents
+
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -11,24 +12,33 @@
 - [License](#license)
 
 ## Description
-In this project we wrote and deployed a README generator using node js and npm commands. This will be extremely useful going forward as it will save time for any project by allowing us to just answer question to fill in the sections of the readme instead of completely writing an entire file everytime.
+
+Insert Your Description Here
 
 ## Installation
-node.js and npm inquirier
+
+Insert The npm 'file names', node.js and Anything Else Here
 
 ## Usage
+
+Insert Usage Here
+
 ![Usage Image](assets/usage.png)
 
 ## Questions
+
 For any questions, please contact me at:
-- GitHub: https://github.com/Ajthompson88
-- Email: aj.thompson8888@gmail.com
+- GitHub: Insert URL Here
+- Email: Insert Email Here
 
 ## Contributions
-No contribution guidelines provided
+
+Insert Contributions Here
 
 ## Authors
-Andrew Thompson
+
+Insert Authors Here
 
 ## License
-None
+
+Insert License Here
