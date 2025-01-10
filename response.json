@@ -1,8 +1,8 @@
 {
-  "title": "ReadME Generator",
-  "description": "In this project we wrote and deployed a README generator using node js and npm commands. This will be extremely useful going forward as it will save time for any project by allowing us to just answer question to fill in the sections of the readme instead of completely writing an entire file everytime.",
-  "installation": "npm inquirer and node.js are required to use the application",
-  "github": "https://github.com/Ajthompson88",
-  "authors": "Andrew Thompson",
+  "title": "Insert Your Title Here",
+  "description": "Insert Your Description Here",
+  "installation": "Insert The npm 'file names', node.js and Anything Else Here",
+  "github": "Insert URL Here",
+  "authors": "Insert Authors Here",
   "license": "None"
 }
