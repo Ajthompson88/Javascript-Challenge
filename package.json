@@ -34,7 +34,7 @@
     "yoctocolors-cjs": "^2.1.2"
   },
   "scripts": {
-    "start": "node rmgenerator.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -25,8 +25,18 @@ const promptInformation = async () => {
     },
     {
       type: 'input',
+      message: 'What is your email address?',
+      name: 'email',
+    },
+    {
+      type: 'input',
       message: 'Who are the authors of this work?',
       name: 'authors',
+    },
+    {
+      type: 'input',
+      message: 'How can others contribute to this project?',
+      name: 'contributions',
     },
     {
       type: 'list',
@@ -40,7 +50,7 @@ const promptInformation = async () => {
 };
 
 promptInformation().then((response) => {
-  const { title, description, installation, github, authors, license } = response;
+  const { title, description, installation, github, email, authors, contributions, license } = response;
 
   const jsonResponse = JSON.stringify(response, null, 2);
 
@@ -55,6 +65,15 @@ promptInformation().then((response) => {
   const readContent = `
 # ${title || 'Project Title'}
 
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Questions](#questions)
+- [Contributions](#contributions)
+- [Authors](#authors)
+- [License](#license)
+
 ## Description
 ${description || 'No description provided'}
 
@@ -64,9 +83,13 @@ ${installation || 'No installation instructions provided'}
 ## Usage
 ![Usage Image](assets/usage.png)
 
+## Questions
+For any questions, please contact me at:
+- GitHub: ${github || 'No GitHub URL provided'}
+- Email: ${email || 'No email address provided'}
 
-## Deployment
-${github || 'No GitHub URL provided'}
+## Contributions
+${contributions || 'No contribution guidelines provided'}
 
 ## Authors
 ${authors || 'No authors provided'}
@@ -77,9 +100,9 @@ ${license || 'No license provided'}
 
   fs.writeFile('GeneratedREADME.md', readContent, (err) => {
     if (err) {
-      console.error('Error writing to README.md:', err);
+      console.error('Error writing to GeneratedREADME.md:', err);
     } else {
-      console.log('Portfolio saved to README.md');
+      console.log('Portfolio saved to GeneratedREADME.md');
     }
   });
 })
